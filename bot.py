@@ -5,17 +5,6 @@ from telethon.tl.types import ChannelParticipantAdmin
 from telethon.tl.types import ChannelParticipantCreator
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.errors import UserNotParticipantError
-from flask import Flask
-app = Flask(__name__)
-
-@app.route('/')
-def hello_world():
-    return 'GreyMatters'
-
-
-if __name__ == "__main__":
-    app.run()
-
 
 logging.basicConfig(
     level=logging.INFO,
